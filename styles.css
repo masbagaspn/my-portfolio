@@ -98,6 +98,7 @@ body {
   color: #323232;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  letter-spacing: -1px;
 }
 .projects-container .project-container img {
   width: 100%;
@@ -108,7 +109,4 @@ body {
 }
 .projects-container .project-container:hover .project-info {
   opacity: 1;
-}
-.projects-container .project-container:hover img {
-  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
