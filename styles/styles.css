@@ -30,7 +30,9 @@ body .nav-bar img {
 }
 body .main-container {
   width: 80%;
-  height: 30vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,14 +57,13 @@ body .main-container .main-desc {
 }
 body .projects-container {
   width: 100vw;
-  height: 45vh;
+  height: 48vh;
   align-self: flex-end;
   bottom: 0%;
   display: flex;
   align-items: flex-end;
   padding: 0.5rem;
   gap: 0.5rem;
-  overflow-x: scroll;
 }
 body .projects-container .project-container {
   display: flex;
@@ -70,7 +71,9 @@ body .projects-container .project-container {
   align-items: flex-start;
   justify-content: flex-end;
   width: 256px;
-  height: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   filter: grayscale(100%);
   transition: 0.5s;
 }
@@ -160,9 +163,16 @@ body .projects-container .project-container:hover .project-info {
   body .main-container .main-introduction, body .main-container .main-desc {
     width: 100%;
   }
+  body .main-container .main-introduction {
+    font-size: 1.25rem;
+  }
+  body .main-container .main-desc {
+    font-size: 1rem;
+  }
   body .projects-container {
     width: 100vw;
     overflow-x: auto;
+    padding: 1rem;
     gap: 1rem;
   }
   body .projects-container .project-container {
@@ -184,6 +194,6 @@ body .projects-container .project-container:hover .project-info {
     display: none;
   }
   body .projects-container .project-container img {
-    width: 350px;
+    width: calc(100vw - 2rem);
   }
 }/*# sourceMappingURL=styles.css.map */

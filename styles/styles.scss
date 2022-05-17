@@ -33,7 +33,7 @@ body{
     
     .main-container{
         width: 80%;
-        height: 30vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -63,14 +63,13 @@ body{
     
     .projects-container{
         width: 100vw;
-        height: 45vh;
+        height: 48vh;
         align-self: flex-end;
         bottom: 0%;
         display: flex;
         align-items: flex-end;
         padding: .5rem;
         gap: .5rem;
-        overflow-x: scroll;
     
         .project-container{
             display: flex;
@@ -78,7 +77,7 @@ body{
             align-items: flex-start;
             justify-content: flex-end;
             width: 256px;
-            height: 350px;
+            height: fit-content;
     
             filter: grayscale(100%);
             transition: .5s;
@@ -183,11 +182,18 @@ body{
             .main-introduction, .main-desc{
                 width: 100%;
             }
+            .main-introduction{
+                font-size: 1.25rem;
+            }
+            .main-desc{
+                font-size: 1rem;
+            }
         }
 
         .projects-container{
             width: 100vw;
             overflow-x: auto;
+            padding: 1rem;
             
             gap: 1rem;
 
@@ -208,7 +214,7 @@ body{
                     }
                 }
                 img{
-                    width: 350px;
+                    width: calc(100vw - 2rem);
                 }
             }
         }
